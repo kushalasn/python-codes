@@ -11,17 +11,20 @@ class Codec:
         if x not in self.urls:
             self.urls[x]=longUrl
         else:
-            x=random.randint(0,1000000000)
+            x=random.randint(1000000000,10000000000)
             self.urls[x]=longUrl
             
         code=''.join(str(x))
         short_url='http://tinyurl.com/'+code
+        print(short_url)
         
             
         
         return short_url
         
         
+
+
 
     def decode(self,short_url):
 
@@ -30,5 +33,5 @@ class Codec:
         
 
 # Your Codec object will be instantiated and called as such:
-# codec = Codec()
-# codec.decode(codec.encode(url))
+codec = Codec()
+codec.encode('http://tinyurl.com/ahsfgjgr10378hhbhhivhkvyufyv')
