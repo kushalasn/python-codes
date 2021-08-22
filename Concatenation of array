@@ -1,0 +1,8 @@
+class Solution:
+    def getConcatenation(self, nums):
+        p=len(nums)
+        ans=nums
+        for i in range(0,p):
+            ans.append(nums[i])
+        return ans    
+            
